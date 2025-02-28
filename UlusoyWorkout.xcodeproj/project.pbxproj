@@ -15,6 +15,22 @@
 		C66E32202D6A200100920570 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E321F2D6A200100920570 /* TabBarVC.swift */; };
 		C66E32222D6A22C100920570 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32212D6A22C100920570 /* ProfileVC.swift */; };
 		C66E32292D6A269900920570 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C66E32272D6A269900920570 /* Localizable.strings */; };
+		C66E322C2D6A2EAD00920570 /* ProgramsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322B2D6A2EAD00920570 /* ProgramsVC.swift */; };
+		C66E322E2D6A33C500920570 /* ParksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322D2D6A33C500920570 /* ParksVC.swift */; };
+		C66E32302D6A33D800920570 /* AddParksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322F2D6A33D800920570 /* AddParksVC.swift */; };
+		C66E32332D6A425600920570 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C66E32322D6A425600920570 /* Alamofire */; };
+		C66E32392D6A42D100920570 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = C66E32382D6A42D100920570 /* SwiftSoup */; };
+		C66E323E2D6A46CD00920570 /* PackageScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E323D2D6A46CD00920570 /* PackageScraping.swift */; };
+		C66E32422D6A495500920570 /* URLEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32412D6A495500920570 /* URLEndpoints.swift */; };
+		C66E32442D6A634D00920570 /* ProgramsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32432D6A634D00920570 /* ProgramsVM.swift */; };
+		C66E32462D6A72B900920570 /* CoachingScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32452D6A72B900920570 /* CoachingScraping.swift */; };
+		C66E324B2D6A9B9200920570 /* ReviewsScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */; };
+		C6F5F0922D6F3918005F3B1F /* PicturesScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */; };
+		C6F5F0952D6FB029005F3B1F /* CoachingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */; };
+		C6F5F0962D6FB029005F3B1F /* CoachingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */; };
+		C6F5F0982D6FBAD5005F3B1F /* ProgramsContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F5F0972D6FBAD5005F3B1F /* ProgramsContentView.xib */; };
+		C6F5F09D2D7088BB005F3B1F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */; };
+		C6F5F0A02D70B0CA005F3B1F /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F09F2D70B0CA005F3B1F /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +45,20 @@
 		C66E32212D6A22C100920570 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C66E32282D6A269900920570 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C66E322A2D6A26A800920570 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C66E322B2D6A2EAD00920570 /* ProgramsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsVC.swift; sourceTree = "<group>"; };
+		C66E322D2D6A33C500920570 /* ParksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksVC.swift; sourceTree = "<group>"; };
+		C66E322F2D6A33D800920570 /* AddParksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParksVC.swift; sourceTree = "<group>"; };
+		C66E323D2D6A46CD00920570 /* PackageScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageScraping.swift; sourceTree = "<group>"; };
+		C66E32412D6A495500920570 /* URLEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoints.swift; sourceTree = "<group>"; };
+		C66E32432D6A634D00920570 /* ProgramsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsVM.swift; sourceTree = "<group>"; };
+		C66E32452D6A72B900920570 /* CoachingScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingScraping.swift; sourceTree = "<group>"; };
+		C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsScraping.swift; sourceTree = "<group>"; };
+		C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesScraping.swift; sourceTree = "<group>"; };
+		C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingCell.swift; sourceTree = "<group>"; };
+		C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachingCell.xib; sourceTree = "<group>"; };
+		C6F5F0972D6FBAD5005F3B1F /* ProgramsContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramsContentView.xib; sourceTree = "<group>"; };
+		C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		C6F5F09F2D70B0CA005F3B1F /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66E32332D6A425600920570 /* Alamofire in Frameworks */,
+				C66E32392D6A42D100920570 /* SwiftSoup in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,8 +93,11 @@
 		C66E32132D6A0BCA00920570 /* UlusoyWorkout */ = {
 			isa = PBXGroup;
 			children = (
+				C66E324E2D6B9BB800920570 /* Helper */,
 				C66E321B2D6A140800920570 /* Resources */,
 				C66E321A2D6A13FF00920570 /* App */,
+				C66E323A2D6A431D00920570 /* Network */,
+				C66E323C2D6A433800920570 /* ViewModel */,
 				C66E321C2D6A141300920570 /* View */,
 			);
 			path = UlusoyWorkout;
@@ -100,9 +135,13 @@
 		C66E321D2D6A141800920570 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C66E32122D6A0BCA00920570 /* HomeVC.swift */,
-				C66E32212D6A22C100920570 /* ProfileVC.swift */,
 				C66E321F2D6A200100920570 /* TabBarVC.swift */,
+				C66E32122D6A0BCA00920570 /* HomeVC.swift */,
+				C66E322D2D6A33C500920570 /* ParksVC.swift */,
+				C66E322F2D6A33D800920570 /* AddParksVC.swift */,
+				C66E322B2D6A2EAD00920570 /* ProgramsVC.swift */,
+				C6F5F0972D6FBAD5005F3B1F /* ProgramsContentView.xib */,
+				C66E32212D6A22C100920570 /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -110,8 +149,39 @@
 		C66E321E2D6A143C00920570 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */,
+				C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C66E323A2D6A431D00920570 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C66E32412D6A495500920570 /* URLEndpoints.swift */,
+				C66E323D2D6A46CD00920570 /* PackageScraping.swift */,
+				C66E32452D6A72B900920570 /* CoachingScraping.swift */,
+				C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */,
+				C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */,
+				C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C66E323C2D6A433800920570 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C66E32432D6A634D00920570 /* ProgramsVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C66E324E2D6B9BB800920570 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				C6F5F09F2D70B0CA005F3B1F /* HapticFeedback.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +201,8 @@
 			);
 			name = UlusoyWorkout;
 			packageProductDependencies = (
+				C66E32322D6A425600920570 /* Alamofire */,
+				C66E32382D6A42D100920570 /* SwiftSoup */,
 			);
 			productName = UlusoyWorkout;
 			productReference = C66E31F42D6A0B5100920570 /* UlusoyWorkout.app */;
@@ -161,6 +233,10 @@
 			);
 			mainGroup = C66E31EB2D6A0B5100920570;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C66E31F52D6A0B5100920570 /* Products */;
 			projectDirPath = "";
@@ -177,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C66E32142D6A0BCA00920570 /* Assets.xcassets in Resources */,
+				C6F5F0962D6FB029005F3B1F /* CoachingCell.xib in Resources */,
 				C66E32292D6A269900920570 /* Localizable.strings in Resources */,
 				C66E32162D6A0BCA00920570 /* LaunchScreen.storyboard in Resources */,
+				C6F5F0982D6FBAD5005F3B1F /* ProgramsContentView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,11 +267,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66E32442D6A634D00920570 /* ProgramsVM.swift in Sources */,
+				C66E322E2D6A33C500920570 /* ParksVC.swift in Sources */,
+				C6F5F0952D6FB029005F3B1F /* CoachingCell.swift in Sources */,
 				C66E32222D6A22C100920570 /* ProfileVC.swift in Sources */,
 				C66E32172D6A0BCA00920570 /* AppDelegate.swift in Sources */,
+				C66E32422D6A495500920570 /* URLEndpoints.swift in Sources */,
+				C6F5F09D2D7088BB005F3B1F /* ImageLoader.swift in Sources */,
+				C66E32462D6A72B900920570 /* CoachingScraping.swift in Sources */,
 				C66E32182D6A0BCA00920570 /* SceneDelegate.swift in Sources */,
 				C66E32202D6A200100920570 /* TabBarVC.swift in Sources */,
+				C66E322C2D6A2EAD00920570 /* ProgramsVC.swift in Sources */,
+				C6F5F0922D6F3918005F3B1F /* PicturesScraping.swift in Sources */,
+				C66E32302D6A33D800920570 /* AddParksVC.swift in Sources */,
 				C66E32192D6A0BCA00920570 /* HomeVC.swift in Sources */,
+				C66E323E2D6A46CD00920570 /* PackageScraping.swift in Sources */,
+				C66E324B2D6A9B9200920570 /* ReviewsScraping.swift in Sources */,
+				C6F5F0A02D70B0CA005F3B1F /* HapticFeedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +511,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C66E32322D6A425600920570 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		C66E32382D6A42D100920570 /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C66E31EC2D6A0B5100920570 /* Project object */;
 }

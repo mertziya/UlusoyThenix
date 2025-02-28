@@ -11,7 +11,7 @@ class ProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+        view.backgroundColor = .appLightGray
         // Do any additional setup after loading the view.
     }
     
