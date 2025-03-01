@@ -31,7 +31,7 @@ class ProgramsVM{
     func fetchPackages(){
         delegate?.isLoadingPackages(value: true) // Start loading packages
         DispatchQueue.global().async {
-            PackageScraping.scrapePackages { res in
+            PackageService.fetchPackages { res in
                 switch res{
                 case .failure(let error):
                     self.delegate?.didReturnErrorForPackages(with: error)
@@ -47,7 +47,7 @@ class ProgramsVM{
     func fetchCoaching(){
         delegate?.isLoadingCoachings(value: true)
         DispatchQueue.global().async {
-            CoachingScraping.scrapeCoachings { res in
+            CoachingService.getCoachingData { res in
                 switch res{
                 case .success(let coachings):
                     self.delegate?.didLoadCoachings(with: coachings)
@@ -61,30 +61,26 @@ class ProgramsVM{
     
     func fetchReviews(){
         delegate?.isLoadingReviews(value: true)
-
-        let programsVC = ProgramsVC()
-        
-        programsVC.setupWebView(withURL: URLEndpoints.hazirPaketler) { html in
-            guard let html = html else{return}
-            DispatchQueue.global().async {
-                ReviewsScraping.scrapeReviews(renderedHTML: html) { res in
-                    switch res{
-                    case .success(let reviews):
-                        self.delegate?.didLoadReviews(with: reviews)
-                    case .failure(let error):
-                        self.delegate?.didReturnErrorForPackages(with: error)
-                    }
+       
+        DispatchQueue.global().async {
+            ReviewService.fetchReviews { res in
+                switch res{
+                case .success(let reviews):
+                    self.delegate?.didLoadReviews(with: reviews)
+                case .failure(let error):
+                    self.delegate?.didReturnErrorForPackages(with: error)
                 }
-                self.delegate?.isLoadingReviews(value: false)
             }
+            self.delegate?.isLoadingReviews(value: false)
         }
+    
     }
     
     func fetchPictures(){
         delegate?.isLoadingPictures(value: true)
         
         DispatchQueue.global().async {
-            PicturesScraping.scrapePictures { res in
+            PicturesService.fetchPictures { res in
                 switch res{
                 case .success(let pictures):
                     self.delegate?.didLoadPictures(with: pictures)

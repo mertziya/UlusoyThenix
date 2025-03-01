@@ -17,9 +17,7 @@ class ImageLoader{
         if !formattedURLString.lowercased().hasPrefix("http") {
             formattedURLString = "https://" + formattedURLString
         }
-        
-        print(formattedURLString)
-        
+                
         guard let url = URL(string: formattedURLString) else {
             print("Invalid URL: \(formattedURLString)")
             completion(nil)

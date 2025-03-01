@@ -18,22 +18,26 @@
 		C66E322C2D6A2EAD00920570 /* ProgramsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322B2D6A2EAD00920570 /* ProgramsVC.swift */; };
 		C66E322E2D6A33C500920570 /* ParksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322D2D6A33C500920570 /* ParksVC.swift */; };
 		C66E32302D6A33D800920570 /* AddParksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E322F2D6A33D800920570 /* AddParksVC.swift */; };
-		C66E32332D6A425600920570 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = C66E32322D6A425600920570 /* Alamofire */; };
-		C66E32392D6A42D100920570 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = C66E32382D6A42D100920570 /* SwiftSoup */; };
-		C66E323E2D6A46CD00920570 /* PackageScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E323D2D6A46CD00920570 /* PackageScraping.swift */; };
+		C66E323E2D6A46CD00920570 /* PackageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E323D2D6A46CD00920570 /* PackageService.swift */; };
 		C66E32422D6A495500920570 /* URLEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32412D6A495500920570 /* URLEndpoints.swift */; };
 		C66E32442D6A634D00920570 /* ProgramsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32432D6A634D00920570 /* ProgramsVM.swift */; };
-		C66E32462D6A72B900920570 /* CoachingScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32452D6A72B900920570 /* CoachingScraping.swift */; };
-		C66E324B2D6A9B9200920570 /* ReviewsScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */; };
-		C6F5F0922D6F3918005F3B1F /* PicturesScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */; };
+		C66E32462D6A72B900920570 /* CoachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32452D6A72B900920570 /* CoachingService.swift */; };
+		C66E324B2D6A9B9200920570 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E324A2D6A9B9200920570 /* ReviewService.swift */; };
+		C696C9C42D728553006A1EE6 /* Privacy.plist in Resources */ = {isa = PBXBuildFile; fileRef = C696C9C32D728553006A1EE6 /* Privacy.plist */; };
+		C696C9C62D72857F006A1EE6 /* GetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9C52D72857F006A1EE6 /* GetToken.swift */; };
+		C696C9C82D7376FC006A1EE6 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9C72D7376FC006A1EE6 /* WebVC.swift */; };
+		C6F5F0922D6F3918005F3B1F /* PicturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0912D6F3918005F3B1F /* PicturesService.swift */; };
 		C6F5F0952D6FB029005F3B1F /* CoachingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */; };
 		C6F5F0962D6FB029005F3B1F /* CoachingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */; };
 		C6F5F0982D6FBAD5005F3B1F /* ProgramsContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F5F0972D6FBAD5005F3B1F /* ProgramsContentView.xib */; };
 		C6F5F09D2D7088BB005F3B1F /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */; };
 		C6F5F0A02D70B0CA005F3B1F /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F09F2D70B0CA005F3B1F /* HapticFeedback.swift */; };
+		F3B2AAD2BA14CC1063F37E8B /* Pods_UlusoyWorkout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FB6B3E70E35C7D4E94E71F /* Pods_UlusoyWorkout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50FB6B3E70E35C7D4E94E71F /* Pods_UlusoyWorkout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UlusoyWorkout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D445FF3395B478F5AE5AF2 /* Pods-UlusoyWorkout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlusoyWorkout.debug.xcconfig"; path = "Target Support Files/Pods-UlusoyWorkout/Pods-UlusoyWorkout.debug.xcconfig"; sourceTree = "<group>"; };
 		C66E31F42D6A0B5100920570 /* UlusoyWorkout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UlusoyWorkout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66E320C2D6A0BCA00920570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C66E320D2D6A0BCA00920570 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,17 +52,21 @@
 		C66E322B2D6A2EAD00920570 /* ProgramsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsVC.swift; sourceTree = "<group>"; };
 		C66E322D2D6A33C500920570 /* ParksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksVC.swift; sourceTree = "<group>"; };
 		C66E322F2D6A33D800920570 /* AddParksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddParksVC.swift; sourceTree = "<group>"; };
-		C66E323D2D6A46CD00920570 /* PackageScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageScraping.swift; sourceTree = "<group>"; };
+		C66E323D2D6A46CD00920570 /* PackageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageService.swift; sourceTree = "<group>"; };
 		C66E32412D6A495500920570 /* URLEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEndpoints.swift; sourceTree = "<group>"; };
 		C66E32432D6A634D00920570 /* ProgramsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsVM.swift; sourceTree = "<group>"; };
-		C66E32452D6A72B900920570 /* CoachingScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingScraping.swift; sourceTree = "<group>"; };
-		C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewsScraping.swift; sourceTree = "<group>"; };
-		C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesScraping.swift; sourceTree = "<group>"; };
+		C66E32452D6A72B900920570 /* CoachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingService.swift; sourceTree = "<group>"; };
+		C66E324A2D6A9B9200920570 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
+		C696C9C32D728553006A1EE6 /* Privacy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Privacy.plist; sourceTree = "<group>"; };
+		C696C9C52D72857F006A1EE6 /* GetToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToken.swift; sourceTree = "<group>"; };
+		C696C9C72D7376FC006A1EE6 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
+		C6F5F0912D6F3918005F3B1F /* PicturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesService.swift; sourceTree = "<group>"; };
 		C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingCell.swift; sourceTree = "<group>"; };
 		C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachingCell.xib; sourceTree = "<group>"; };
 		C6F5F0972D6FBAD5005F3B1F /* ProgramsContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgramsContentView.xib; sourceTree = "<group>"; };
 		C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		C6F5F09F2D70B0CA005F3B1F /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		F571FD1989AF841C940CBA19 /* Pods-UlusoyWorkout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UlusoyWorkout.release.xcconfig"; path = "Target Support Files/Pods-UlusoyWorkout/Pods-UlusoyWorkout.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,19 +74,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C66E32332D6A425600920570 /* Alamofire in Frameworks */,
-				C66E32392D6A42D100920570 /* SwiftSoup in Frameworks */,
+				F3B2AAD2BA14CC1063F37E8B /* Pods_UlusoyWorkout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52CEE916F030F8E33BBA701B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50FB6B3E70E35C7D4E94E71F /* Pods_UlusoyWorkout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F68F97F28CF0951265B7BF8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5D445FF3395B478F5AE5AF2 /* Pods-UlusoyWorkout.debug.xcconfig */,
+				F571FD1989AF841C940CBA19 /* Pods-UlusoyWorkout.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C66E31EB2D6A0B5100920570 = {
 			isa = PBXGroup;
 			children = (
 				C66E32132D6A0BCA00920570 /* UlusoyWorkout */,
 				C66E31F52D6A0B5100920570 /* Products */,
+				5F68F97F28CF0951265B7BF8 /* Pods */,
+				52CEE916F030F8E33BBA701B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,6 +141,8 @@
 		C66E321B2D6A140800920570 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C696C9C32D728553006A1EE6 /* Privacy.plist */,
+				C696C9C52D72857F006A1EE6 /* GetToken.swift */,
 				C66E320E2D6A0BCA00920570 /* Info.plist */,
 				C66E320D2D6A0BCA00920570 /* Assets.xcassets */,
 				C66E32102D6A0BCA00920570 /* LaunchScreen.storyboard */,
@@ -151,6 +179,7 @@
 			children = (
 				C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */,
 				C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */,
+				C696C9C72D7376FC006A1EE6 /* WebVC.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -159,10 +188,10 @@
 			isa = PBXGroup;
 			children = (
 				C66E32412D6A495500920570 /* URLEndpoints.swift */,
-				C66E323D2D6A46CD00920570 /* PackageScraping.swift */,
-				C66E32452D6A72B900920570 /* CoachingScraping.swift */,
-				C66E324A2D6A9B9200920570 /* ReviewsScraping.swift */,
-				C6F5F0912D6F3918005F3B1F /* PicturesScraping.swift */,
+				C66E323D2D6A46CD00920570 /* PackageService.swift */,
+				C66E32452D6A72B900920570 /* CoachingService.swift */,
+				C66E324A2D6A9B9200920570 /* ReviewService.swift */,
+				C6F5F0912D6F3918005F3B1F /* PicturesService.swift */,
 				C6F5F09C2D7088BB005F3B1F /* ImageLoader.swift */,
 			);
 			path = Network;
@@ -191,19 +220,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C66E32072D6A0B5300920570 /* Build configuration list for PBXNativeTarget "UlusoyWorkout" */;
 			buildPhases = (
+				CD79D98CB74416CD2144BF22 /* [CP] Check Pods Manifest.lock */,
 				C66E31F02D6A0B5100920570 /* Sources */,
 				C66E31F12D6A0B5100920570 /* Frameworks */,
 				C66E31F22D6A0B5100920570 /* Resources */,
+				E565F8A5517EE175ECD79A81 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = UlusoyWorkout;
-			packageProductDependencies = (
-				C66E32322D6A425600920570 /* Alamofire */,
-				C66E32382D6A42D100920570 /* SwiftSoup */,
-			);
 			productName = UlusoyWorkout;
 			productReference = C66E31F42D6A0B5100920570 /* UlusoyWorkout.app */;
 			productType = "com.apple.product-type.application";
@@ -233,10 +260,6 @@
 			);
 			mainGroup = C66E31EB2D6A0B5100920570;
 			minimizedProjectReferenceProxies = 1;
-			packageReferences = (
-				C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
-			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C66E31F52D6A0B5100920570 /* Products */;
 			projectDirPath = "";
@@ -257,10 +280,53 @@
 				C66E32292D6A269900920570 /* Localizable.strings in Resources */,
 				C66E32162D6A0BCA00920570 /* LaunchScreen.storyboard in Resources */,
 				C6F5F0982D6FBAD5005F3B1F /* ProgramsContentView.xib in Resources */,
+				C696C9C42D728553006A1EE6 /* Privacy.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD79D98CB74416CD2144BF22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UlusoyWorkout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E565F8A5517EE175ECD79A81 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlusoyWorkout/Pods-UlusoyWorkout-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UlusoyWorkout/Pods-UlusoyWorkout-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UlusoyWorkout/Pods-UlusoyWorkout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C66E31F02D6A0B5100920570 /* Sources */ = {
@@ -274,15 +340,17 @@
 				C66E32172D6A0BCA00920570 /* AppDelegate.swift in Sources */,
 				C66E32422D6A495500920570 /* URLEndpoints.swift in Sources */,
 				C6F5F09D2D7088BB005F3B1F /* ImageLoader.swift in Sources */,
-				C66E32462D6A72B900920570 /* CoachingScraping.swift in Sources */,
+				C66E32462D6A72B900920570 /* CoachingService.swift in Sources */,
 				C66E32182D6A0BCA00920570 /* SceneDelegate.swift in Sources */,
 				C66E32202D6A200100920570 /* TabBarVC.swift in Sources */,
 				C66E322C2D6A2EAD00920570 /* ProgramsVC.swift in Sources */,
-				C6F5F0922D6F3918005F3B1F /* PicturesScraping.swift in Sources */,
+				C6F5F0922D6F3918005F3B1F /* PicturesService.swift in Sources */,
 				C66E32302D6A33D800920570 /* AddParksVC.swift in Sources */,
+				C696C9C82D7376FC006A1EE6 /* WebVC.swift in Sources */,
 				C66E32192D6A0BCA00920570 /* HomeVC.swift in Sources */,
-				C66E323E2D6A46CD00920570 /* PackageScraping.swift in Sources */,
-				C66E324B2D6A9B9200920570 /* ReviewsScraping.swift in Sources */,
+				C696C9C62D72857F006A1EE6 /* GetToken.swift in Sources */,
+				C66E323E2D6A46CD00920570 /* PackageService.swift in Sources */,
+				C66E324B2D6A9B9200920570 /* ReviewService.swift in Sources */,
 				C6F5F0A02D70B0CA005F3B1F /* HapticFeedback.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,12 +380,14 @@
 /* Begin XCBuildConfiguration section */
 		C66E32082D6A0B5300920570 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D445FF3395B478F5AE5AF2 /* Pods-UlusoyWorkout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UlusoyWorkout/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UlusoyThenix;
@@ -341,12 +411,14 @@
 		};
 		C66E32092D6A0B5300920570 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F571FD1989AF841C940CBA19 /* Pods-UlusoyWorkout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DU4MNZ89TN;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UlusoyWorkout/Resources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = UlusoyThenix;
@@ -511,38 +583,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.10.2;
-			};
-		};
-		C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/scinfu/SwiftSoup.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.6.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		C66E32322D6A425600920570 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C66E32312D6A425600920570 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-		C66E32382D6A42D100920570 /* SwiftSoup */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C66E32372D6A42D100920570 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C66E31EC2D6A0B5100920570 /* Project object */;
 }

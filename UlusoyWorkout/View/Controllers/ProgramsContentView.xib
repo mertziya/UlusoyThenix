@@ -14,10 +14,10 @@
             <connections>
                 <outlet property="SSSCollectionView" destination="e5u-GL-fak" id="Ijd-2N-pJM"/>
                 <outlet property="SSSLabel" destination="fhH-bU-rZ3" id="GVD-vT-b5j"/>
-                <outlet property="coachingCollectionView" destination="f5K-sn-l3n" id="Uu6-Xo-BQq"/>
+                <outlet property="coachingCollectionView" destination="Iin-TS-Pve" id="bQM-3Z-tNk"/>
                 <outlet property="coachingLabel" destination="iDC-G2-4Bu" id="AyD-WQ-CW1"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="OXj-xA-pmX"/>
-                <outlet property="packagesCollectionView" destination="miC-hA-vM4" id="Bq8-r4-9bC"/>
+                <outlet property="packagesCollectionView" destination="miC-hA-vM4" id="sWc-sc-tJ9"/>
                 <outlet property="packagesLabel" destination="Xbb-VE-lc2" id="4fj-N7-pjV"/>
                 <outlet property="redeemPolicyLabel" destination="j0H-h9-obJ" id="ps9-gj-8pw"/>
                 <outlet property="resultPicturesCollectionView" destination="G1o-UR-zdo" id="6vc-by-RZ6"/>
@@ -36,26 +36,13 @@
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-sn-l3n">
-                    <rect key="frame" x="0.0" y="76.666666666666686" width="418" height="460.00000000000006"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="460" id="yq2-Ch-0fi"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="6j0-Ix-Qnv">
-                        <size key="itemSize" width="288" height="448"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAZIR PAKETLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-VE-lc2">
                     <rect key="frame" x="8" y="616.66666666666663" width="260.33333333333331" height="36.666666666666629"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="miC-hA-vM4">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="miC-hA-vM4" customClass="FSPagerCollectionView" customModule="FSPagerView">
                     <rect key="frame" x="0.0" y="661.33333333333337" width="418" height="288"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
@@ -124,7 +111,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="oaR-Lu-jhE"/>
                     </constraints>
-                    <mutableString key="text">Eğitim süreci içerisinde devam edememe durumlarına karşı ücret iadesi, katılım gününden sonraki 14 gün içinde yapılacaktır. 14 günü geçmiş süreçlerde eğitim sistemi dondurularak uygun zamanda devam edilecek şekilde ayarlanacaktır. İade süreci içerisinde programı verilen ay güncel 1 aylık ödeme bazında kesinti yapılacaktır.</mutableString>
+                    <string key="text">Eğitim süreci içerisinde devam edememe durumlarına karşı ücret iadesi, katılım gününden sonraki 14 gün içinde yapılacaktır. 14 günü geçmiş süreçlerde eğitim sistemi dondurularak uygun zamanda devam edilecek şekilde ayarlanacaktır. İade süreci içerisinde programı verilen ay güncel 1 aylık ödeme bazında kesinti yapılacaktır.</string>
                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -135,28 +122,40 @@
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-TS-Pve" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="88.666666666666686" width="418" height="468.00000000000006"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="468" id="zkr-n0-QLM"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="size" keyPath="itemSize">
+                            <size key="value" width="290" height="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="miC-hA-vM4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Hk-rY-3WG"/>
-                <constraint firstItem="f5K-sn-l3n" firstAttribute="top" secondItem="iDC-G2-4Bu" secondAttribute="bottom" constant="8" id="7xz-P3-ayP"/>
                 <constraint firstItem="G1o-UR-zdo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9gI-Pr-C3u"/>
                 <constraint firstItem="BWD-8k-USa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="9hI-33-Tpr"/>
                 <constraint firstItem="ySi-mt-UKc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9kS-ff-WKA"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="miC-hA-vM4" secondAttribute="trailing" id="E0b-1C-T52"/>
-                <constraint firstItem="Xbb-VE-lc2" firstAttribute="top" secondItem="f5K-sn-l3n" secondAttribute="bottom" constant="80" id="EMA-i2-yYY"/>
                 <constraint firstItem="qHf-i9-BCS" firstAttribute="top" secondItem="G1o-UR-zdo" secondAttribute="bottom" constant="16" id="EtH-Gz-Q7A"/>
+                <constraint firstItem="Iin-TS-Pve" firstAttribute="top" secondItem="iDC-G2-4Bu" secondAttribute="bottom" constant="20" id="FMJ-fB-gRW"/>
                 <constraint firstItem="iDC-G2-4Bu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="P9E-7q-zr2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G1o-UR-zdo" secondAttribute="trailing" id="RS9-0A-6rA"/>
                 <constraint firstItem="ySi-mt-UKc" firstAttribute="top" secondItem="j0H-h9-obJ" secondAttribute="bottom" constant="8" id="TT0-ON-c4H"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f5K-sn-l3n" secondAttribute="trailing" id="Wbs-sL-Qlz"/>
-                <constraint firstItem="f5K-sn-l3n" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WcK-vn-6IV"/>
                 <constraint firstItem="G1o-UR-zdo" firstAttribute="top" secondItem="BWD-8k-USa" secondAttribute="bottom" constant="8" id="X14-Oa-d0h"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qHf-i9-BCS" secondAttribute="trailing" id="X3p-aK-Pzf"/>
                 <constraint firstItem="j0H-h9-obJ" firstAttribute="leading" secondItem="e5u-GL-fak" secondAttribute="trailing" constant="-289" id="bIn-Jr-ILf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="e5u-GL-fak" secondAttribute="trailing" id="eUa-lr-ZEO"/>
                 <constraint firstItem="Xbb-VE-lc2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="evw-Kc-7LM"/>
+                <constraint firstItem="Xbb-VE-lc2" firstAttribute="top" secondItem="Iin-TS-Pve" secondAttribute="bottom" constant="60" id="eyT-Hx-Rrq"/>
+                <constraint firstItem="Iin-TS-Pve" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fVM-wc-YB0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iin-TS-Pve" secondAttribute="trailing" id="heu-Ia-qwX"/>
                 <constraint firstItem="BWD-8k-USa" firstAttribute="top" secondItem="miC-hA-vM4" secondAttribute="bottom" constant="80" id="iVf-9m-Ue5"/>
                 <constraint firstItem="e5u-GL-fak" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j1C-3w-fr2"/>
                 <constraint firstItem="j0H-h9-obJ" firstAttribute="top" secondItem="e5u-GL-fak" secondAttribute="bottom" constant="80" id="lHL-0n-iN4"/>
@@ -179,6 +178,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

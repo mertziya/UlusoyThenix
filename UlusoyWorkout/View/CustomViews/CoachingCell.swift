@@ -6,21 +6,25 @@
 //
 
 import UIKit
+import FSPagerView
 
-class CoachingCell: UICollectionViewCell {
+class CoachingCell: FSPagerViewCell {
     // Properties:
     static let nibName = "CoachingCell"
     static let identifier = "CoachingCellIdentifier"
     static let cellWidth : CGFloat = 288
     
     // UI Components:
+    
+    @IBOutlet weak var outerWrapper: UIView!
+    @IBOutlet weak var wrapperView: UIView!
+    
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
-    @IBOutlet weak var wrapperView: UIView!
     
-
+    
    
     
     override func awakeFromNib() {
@@ -30,43 +34,56 @@ class CoachingCell: UICollectionViewCell {
     }
 
     
-    private func configureCellUI(){
-        clipsToBounds = false
-        backgroundColor = .appCell
-        layer.cornerRadius = 24
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: -2, height: 2)
-        layer.shadowOpacity = 0.5
-        layer.shadowRadius = 4
-    }
+    private func configureCellUI() {
+        self.backgroundColor = .clear
+        self.clipsToBounds = false
+        
+        wrapperView.backgroundColor = .appCell
+        
+        
+        outerWrapper.layer.cornerRadius = 24
+        outerWrapper.layer.shadowColor = UIColor.black.cgColor
+        outerWrapper.layer.shadowOffset = CGSize(width: -1, height: 1)
+        outerWrapper.layer.shadowOpacity = 0.5
+        outerWrapper.layer.shadowRadius = 2
+        outerWrapper.layer.masksToBounds = false
     
-    func configureCell(with coaching : Coaching , color: UIColor, imageURL : String){
-       
         contentImage.layer.cornerRadius = 24
         contentImage.clipsToBounds = true
+        contentImage.contentMode = .scaleAspectFill
 
-        
         wrapperView.layer.cornerRadius = 24
-        wrapperView.layer.shadowColor = color.cgColor
         wrapperView.layer.shadowOffset = CGSize(width: 0, height: 0)
         wrapperView.layer.shadowOpacity = 1
         wrapperView.layer.shadowRadius = 12
-       
         
-        ImageLoader.getImage(from: imageURL, completion: { image in
+        monthLabel.textColor = .appLabel
+        priceLabel.textColor = .appGreen
+        descriptionLabel.textColor = .appLabel
+      
+        
+    }
+    
+    func configureCell(with coaching : Coaching , color: UIColor){
+       
+        wrapperView.layer.shadowColor = color.cgColor
+        
+        ImageLoader.getImage(from: coaching.imageURL, completion: { image in
             DispatchQueue.main.async {
                 self.contentImage.image = image
             }
         })
         
         monthLabel.text = coaching.month
+        
         priceLabel.text = coaching.price
-        priceLabel.textColor = .appGreen
         
         descriptionLabel.text = ""
         for detail in coaching.details ?? [] {
             descriptionLabel.text! += "• \(detail)\n"
         }
+        
+        
         
     }
 
