@@ -15,7 +15,9 @@ struct Coaching : Decodable{
     var shopierURL : String?
     var month : String?
     var price : String?
+    var discountPrice : String?
     var details : [String]?
+    var color : String?
     
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -24,6 +26,9 @@ struct Coaching : Decodable{
         case month = "Ay"
         case price = "Ücret"
         case details = "Detaylar"
+        case discountPrice = "İndirimli Ücret"
+        case color = "Renk"
+        
     }
 }
 

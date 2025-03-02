@@ -18,7 +18,7 @@ class ProgramsVC: UIViewController{
     @IBOutlet weak var coachingCollectionView: FSPagerView!
     
     @IBOutlet weak var packagesLabel: UILabel!
-    @IBOutlet weak var packagesCollectionView: UICollectionView!
+    @IBOutlet weak var packagesCollectionView: FSPagerView!
     
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var resultPicturesCollectionView: UICollectionView!
@@ -40,8 +40,14 @@ class ProgramsVC: UIViewController{
             }
         }
     }
-    private var coachingColors : [UIColor] = [.appBronze, .appSilver , .appGolden, .appDiamond]
-    var spacingToCenterCell : CGFloat = 0.0
+    private var packages : [ReadyPackage] = [] {
+        didSet{
+            DispatchQueue.main.async {
+                self.packagesCollectionView.reloadData()
+            }
+        }
+    }
+    
     
    
 
@@ -115,15 +121,23 @@ extension ProgramsVC{
         coachingCollectionView.dataSource = self
         coachingCollectionView.register(UINib(nibName: CoachingCell.nibName, bundle: nil), forCellWithReuseIdentifier: CoachingCell.identifier)
         
-        // ✅ Configure layout
+        packagesCollectionView.delegate = self
+        packagesCollectionView.dataSource = self
+        packagesCollectionView.register(UINib(nibName: PackageCell.nibName, bundle: nil), forCellWithReuseIdentifier: PackageCell.identifier)
+        
+        // Configure layout:
         coachingCollectionView.backgroundColor = .clear
         coachingCollectionView.itemSize = CGSize(width: 290, height: 448)  // Set item size
         coachingCollectionView.interitemSpacing = 10  // Space between items
         coachingCollectionView.transformer = FSPagerViewTransformer(type: .linear)  // Standard collection view style
         coachingCollectionView.isInfinite = true  // Enable infinite scrolling
-        coachingCollectionView.layer.shadowOpacity = 0.0
         
-        coachingCollectionView.decelerationDistance = 1
+        packagesCollectionView.backgroundColor = .clear
+        packagesCollectionView.itemSize = CGSize(width: 190, height: 288)  // Set item size
+        packagesCollectionView.interitemSpacing = 10  // Space between items
+        packagesCollectionView.transformer = FSPagerViewTransformer(type: .linear)  // Standard collection view style
+        packagesCollectionView.isInfinite = true  // Enable infinite scrolling
+        packagesCollectionView.clipsToBounds = false
     }
     
     
@@ -137,6 +151,9 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
         switch pagerView{
         case coachingCollectionView:
             return self.coachings.count
+            
+        case packagesCollectionView:
+            return self.packages.count
             
         default:
             return 0
@@ -152,9 +169,14 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
             guard let cell = coachingCollectionView.dequeueReusableCell(withReuseIdentifier: CoachingCell.identifier, at: index) as? CoachingCell else{
                 return FSPagerViewCell()
             }
+            cell.configureCell(with: self.coachings[index])
+            return cell
             
-            cell.configureCell(with: self.coachings[index] , color: self.coachingColors[index])
-            
+        case packagesCollectionView:
+            guard let cell = packagesCollectionView.dequeueReusableCell(withReuseIdentifier: PackageCell.identifier, at: index) as? PackageCell else{
+                return FSPagerViewCell()
+            }
+            cell.configureCell(with: self.packages[index])
             return cell
             
         default:
@@ -165,10 +187,35 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
     }
     
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
-        let webVC = WebVC(webURL: self.coachings[index].shopierURL ?? "")
-        webVC.modalPresentationStyle = .fullScreen
-        self.navigationController?.pushViewController(webVC, animated: true)
+        switch pagerView{
+        case coachingCollectionView:
+            let webVC = WebVC(webURL: self.coachings[index].shopierURL ?? "")
+            webVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(webVC, animated: true)
+            
+            UIView.animate(withDuration: 0.1) {
+                guard let cell = pagerView.cellForItem(at: index) as? CoachingCell else{return}
+                cell.alpha = 1.0
+            }
+        case packagesCollectionView:
+            print("handle packages tapped")
+            
+        default:
+            return
+        }
     }
+    
+    func pagerView(_ pagerView: FSPagerView, willDisplay cell: FSPagerViewCell, forItemAt index: Int) {
+        HapticFeedback.selection()
+    }
+    
+    func pagerView(_ pagerView: FSPagerView, didHighlightItemAt index: Int) {
+        UIView.animate(withDuration: 0.1) {
+            guard let cell = pagerView.cellForItem(at: index) as? CoachingCell else{return}
+            cell.alpha = 0.4
+        }
+    }
+ 
     
 }
 
@@ -210,7 +257,7 @@ extension ProgramsVC : ProgramsVMDelegate{
     }
     
     func didLoadPackages(with packages: [ReadyPackage]) {
-//        print(packages)
+        self.packages = packages
     }
     
     

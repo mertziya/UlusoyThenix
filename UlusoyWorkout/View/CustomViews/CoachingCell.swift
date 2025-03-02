@@ -22,6 +22,7 @@ class CoachingCell: FSPagerViewCell {
     @IBOutlet weak var contentImage: UIImageView!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var discountedPriceLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
@@ -39,7 +40,6 @@ class CoachingCell: FSPagerViewCell {
         self.clipsToBounds = false
         
         wrapperView.backgroundColor = .appCell
-        
         
         outerWrapper.layer.cornerRadius = 24
         outerWrapper.layer.shadowColor = UIColor.black.cgColor
@@ -60,13 +60,14 @@ class CoachingCell: FSPagerViewCell {
         monthLabel.textColor = .appLabel
         priceLabel.textColor = .appGreen
         descriptionLabel.textColor = .appLabel
-      
         
     }
     
-    func configureCell(with coaching : Coaching , color: UIColor){
+    func configureCell(with coaching : Coaching){
+        
+        let colorLiteral =  UIColor(hex: coaching.color ?? "000000")
        
-        wrapperView.layer.shadowColor = color.cgColor
+        wrapperView.layer.shadowColor = colorLiteral.cgColor
         
         ImageLoader.getImage(from: coaching.imageURL, completion: { image in
             DispatchQueue.main.async {
@@ -76,15 +77,53 @@ class CoachingCell: FSPagerViewCell {
         
         monthLabel.text = coaching.month
         
-        priceLabel.text = coaching.price
+        setPrice(with: coaching)
         
         descriptionLabel.text = ""
         for detail in coaching.details ?? [] {
             descriptionLabel.text! += "• \(detail)\n"
         }
         
+    }
+    
+    private func setPrice(with coaching : Coaching){
         
+        // Reset price label to clean state
+       priceLabel.attributedText = nil
+       priceLabel.text = coaching.price
+       priceLabel.textColor = .appGreen
+
+       // Reset discounted price label
+       discountedPriceLabel.text = ""
         
+        if coaching.discountPrice != nil{
+            discountedPriceLabel.text = coaching.discountPrice
+            discountedPriceLabel.textColor = .appGreen
+            let oldPrice = coaching.price ?? ""
+            let attributed = NSMutableAttributedString(string: oldPrice)
+            
+            attributed.addAttributes([
+                .strikethroughStyle: NSUnderlineStyle.single.rawValue | NSUnderlineStyle.patternDash.rawValue,
+                .strikethroughColor: UIColor.red
+            ], range: NSRange(location: 0, length: oldPrice.count))
+            
+            priceLabel.attributedText = attributed
+            priceLabel.textColor = .red
+        }
     }
 
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.alpha = 1.0
+    }
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        UIView.animate(withDuration: 0.3) {
+            super.touchesCancelled(touches, with: event)
+            self.alpha = 1.0
+        }
+    }
+
+    
+    
 }

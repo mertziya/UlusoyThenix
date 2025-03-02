@@ -36,22 +36,16 @@
                             <constraint firstAttribute="height" constant="216" id="9xY-wq-W4x"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 AY| 2025 ÖZEL +1 AY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt4-3Y-4tU">
-                        <rect key="frame" x="12" y="277" width="168.66666666666666" height="18.333333333333314"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 Ay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nt4-3Y-4tU">
+                        <rect key="frame" x="12.000000000000002" y="277" width="31.666666666666671" height="17.333333333333314"/>
                         <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                         <color key="textColor" name="AppLabel"/>
                         <nil key="highlightedColor"/>
                         <color key="shadowColor" name="selectedIcon"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyX-QQ-GRU">
-                        <rect key="frame" x="234.66666666666666" y="277" width="41.333333333333343" height="17.333333333333314"/>
-                        <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
-                        <color key="textColor" name="AppLabel"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgD-ly-SUO">
-                        <rect key="frame" x="12" y="323.33333333333331" width="266" height="109.66666666666669"/>
+                        <rect key="frame" x="12" y="322.33333333333331" width="266" height="109.66666666666669"/>
                         <string key="text">Seviyene uygun antrenman planı 
 Postürünü düzelt, sakatlanmayı önle.
 Hedefe göre kalori hesaplanmış beslenme planı.
@@ -67,6 +61,23 @@ En iyi calisthenics koçuna ulaş.</string>
                         <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <size key="shadowOffset" width="0.0" height="0.0"/>
                     </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="qlJ-7h-X3M">
+                        <rect key="frame" x="183.33333333333334" y="277" width="94.666666666666657" height="17.333333333333314"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyX-QQ-GRU">
+                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="17.333333333333332"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <color key="textColor" name="AppLabel"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500t" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSz-5S-ZhZ">
+                                <rect key="frame" x="53.333333333333314" y="0.0" width="41.333333333333343" height="17.333333333333332"/>
+                                <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
@@ -80,20 +91,21 @@ En iyi calisthenics koçuna ulaş.</string>
                 <constraint firstItem="PVc-GQ-3Gu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="37" id="blR-t4-Lwo"/>
                 <constraint firstAttribute="bottom" secondItem="rTD-rk-Mrk" secondAttribute="bottom" id="cWM-vc-lpu"/>
                 <constraint firstItem="5Fp-up-Afw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="37" id="eNR-gN-Ecm"/>
-                <constraint firstAttribute="trailing" secondItem="RyX-QQ-GRU" secondAttribute="trailing" constant="14" id="ewK-qr-6Bj"/>
                 <constraint firstAttribute="trailing" secondItem="rTD-rk-Mrk" secondAttribute="trailing" id="lAv-C1-A2u"/>
                 <constraint firstItem="PVc-GQ-3Gu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="37" id="ofj-sE-HgV"/>
                 <constraint firstItem="jgD-ly-SUO" firstAttribute="top" secondItem="Nt4-3Y-4tU" secondAttribute="bottom" constant="28" id="p9T-Ys-RSb"/>
                 <constraint firstItem="Nt4-3Y-4tU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="rTx-YJ-K5D"/>
                 <constraint firstItem="rTD-rk-Mrk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tVn-Fj-qys"/>
                 <constraint firstItem="rTD-rk-Mrk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tWB-H1-Kod"/>
+                <constraint firstAttribute="trailing" secondItem="qlJ-7h-X3M" secondAttribute="trailing" constant="12" id="tXq-3r-4Yw"/>
+                <constraint firstItem="qlJ-7h-X3M" firstAttribute="top" secondItem="PVc-GQ-3Gu" secondAttribute="bottom" constant="24" id="tcF-l6-ZIt"/>
                 <constraint firstItem="5Fp-up-Afw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="37" id="wYO-M1-Ilj"/>
-                <constraint firstItem="RyX-QQ-GRU" firstAttribute="top" secondItem="PVc-GQ-3Gu" secondAttribute="bottom" constant="24" id="zyh-aI-kZ7"/>
             </constraints>
             <size key="customSize" width="296" height="415"/>
             <connections>
                 <outlet property="contentImage" destination="PVc-GQ-3Gu" id="Q8J-wZ-xRg"/>
                 <outlet property="descriptionLabel" destination="jgD-ly-SUO" id="U10-iA-xwK"/>
+                <outlet property="discountedPriceLabel" destination="NSz-5S-ZhZ" id="aJg-uz-bwp"/>
                 <outlet property="monthLabel" destination="Nt4-3Y-4tU" id="Lg6-G1-QQS"/>
                 <outlet property="outerWrapper" destination="rTD-rk-Mrk" id="ihe-7H-2JX"/>
                 <outlet property="priceLabel" destination="RyX-QQ-GRU" id="b93-h3-dea"/>

@@ -17,7 +17,7 @@
                 <outlet property="coachingCollectionView" destination="Iin-TS-Pve" id="bQM-3Z-tNk"/>
                 <outlet property="coachingLabel" destination="iDC-G2-4Bu" id="AyD-WQ-CW1"/>
                 <outlet property="contentView" destination="iN0-l3-epB" id="OXj-xA-pmX"/>
-                <outlet property="packagesCollectionView" destination="miC-hA-vM4" id="sWc-sc-tJ9"/>
+                <outlet property="packagesCollectionView" destination="Gbe-os-LFy" id="hCl-fd-dwa"/>
                 <outlet property="packagesLabel" destination="Xbb-VE-lc2" id="4fj-N7-pjV"/>
                 <outlet property="redeemPolicyLabel" destination="j0H-h9-obJ" id="ps9-gj-8pw"/>
                 <outlet property="resultPicturesCollectionView" destination="G1o-UR-zdo" id="6vc-by-RZ6"/>
@@ -37,32 +37,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HAZIR PAKETLER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-VE-lc2">
-                    <rect key="frame" x="8" y="616.66666666666663" width="260.33333333333331" height="36.666666666666629"/>
+                    <rect key="frame" x="8" y="592.66666666666663" width="260.33333333333331" height="36.666666666666629"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="miC-hA-vM4" customClass="FSPagerCollectionView" customModule="FSPagerView">
-                    <rect key="frame" x="0.0" y="661.33333333333337" width="418" height="288"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="288" id="KmB-Pd-eZr"/>
-                    </constraints>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="G5p-6w-sHU">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SONUÇLAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWD-8k-USa">
-                    <rect key="frame" x="8" y="1029.3333333333333" width="167.66666666666666" height="36.666666666666742"/>
+                    <rect key="frame" x="8" y="1063.3333333333333" width="167.66666666666666" height="36.666666666666742"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="G1o-UR-zdo">
-                    <rect key="frame" x="0.0" y="1074" width="418" height="212"/>
+                    <rect key="frame" x="0.0" y="1108" width="418" height="212"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="212" id="9q5-dE-W7o"/>
@@ -75,7 +62,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-i9-BCS">
-                    <rect key="frame" x="0.0" y="1302" width="418" height="96"/>
+                    <rect key="frame" x="0.0" y="1336" width="418" height="96"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="96" id="srw-fI-dPr"/>
@@ -88,13 +75,13 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S.S.S" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhH-bU-rZ3">
-                    <rect key="frame" x="8" y="1478" width="83" height="36.666666666666742"/>
+                    <rect key="frame" x="8" y="1512" width="83" height="36.666666666666742"/>
                     <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="30"/>
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="e5u-GL-fak">
-                    <rect key="frame" x="0.0" y="1522.6666666666667" width="418" height="188"/>
+                    <rect key="frame" x="0.0" y="1556.6666666666667" width="418" height="188"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="188" id="pZl-tY-wZl"/>
@@ -107,7 +94,7 @@
                     </collectionViewFlowLayout>
                 </collectionView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySi-mt-UKc">
-                    <rect key="frame" x="20" y="1816" width="378" height="100"/>
+                    <rect key="frame" x="20" y="1850" width="378" height="100"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="100" id="oaR-Lu-jhE"/>
                     </constraints>
@@ -117,16 +104,16 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ücret İade Politikası" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0H-h9-obJ">
-                    <rect key="frame" x="129" y="1790.6666666666667" width="160" height="17.333333333333258"/>
+                    <rect key="frame" x="129" y="1824.6666666666667" width="160" height="17.333333333333258"/>
                     <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="14"/>
                     <color key="textColor" name="AppLabel"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-TS-Pve" customClass="FSPagerView" customModule="FSPagerView">
-                    <rect key="frame" x="0.0" y="88.666666666666686" width="418" height="468.00000000000006"/>
+                    <rect key="frame" x="0.0" y="72.666666666666686" width="418" height="460.00000000000006"/>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="468" id="zkr-n0-QLM"/>
+                        <constraint firstAttribute="height" constant="460" id="zkr-n0-QLM"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="size" keyPath="itemSize">
@@ -134,19 +121,26 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gbe-os-LFy" customClass="FSPagerView" customModule="FSPagerView">
+                    <rect key="frame" x="0.0" y="637.33333333333337" width="418" height="298"/>
+                    <color key="backgroundColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="298" id="iX5-Z7-5Pt"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="miC-hA-vM4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4Hk-rY-3WG"/>
                 <constraint firstItem="G1o-UR-zdo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9gI-Pr-C3u"/>
                 <constraint firstItem="BWD-8k-USa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="9hI-33-Tpr"/>
                 <constraint firstItem="ySi-mt-UKc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="9kS-ff-WKA"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="miC-hA-vM4" secondAttribute="trailing" id="E0b-1C-T52"/>
+                <constraint firstItem="BWD-8k-USa" firstAttribute="top" secondItem="Gbe-os-LFy" secondAttribute="bottom" constant="128" id="EPT-jq-1T5"/>
                 <constraint firstItem="qHf-i9-BCS" firstAttribute="top" secondItem="G1o-UR-zdo" secondAttribute="bottom" constant="16" id="EtH-Gz-Q7A"/>
-                <constraint firstItem="Iin-TS-Pve" firstAttribute="top" secondItem="iDC-G2-4Bu" secondAttribute="bottom" constant="20" id="FMJ-fB-gRW"/>
+                <constraint firstItem="Iin-TS-Pve" firstAttribute="top" secondItem="iDC-G2-4Bu" secondAttribute="bottom" constant="4" id="FMJ-fB-gRW"/>
                 <constraint firstItem="iDC-G2-4Bu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="P9E-7q-zr2"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="G1o-UR-zdo" secondAttribute="trailing" id="RS9-0A-6rA"/>
+                <constraint firstItem="Gbe-os-LFy" firstAttribute="top" secondItem="Xbb-VE-lc2" secondAttribute="bottom" constant="8" id="Sp0-sQ-ldD"/>
                 <constraint firstItem="ySi-mt-UKc" firstAttribute="top" secondItem="j0H-h9-obJ" secondAttribute="bottom" constant="8" id="TT0-ON-c4H"/>
                 <constraint firstItem="G1o-UR-zdo" firstAttribute="top" secondItem="BWD-8k-USa" secondAttribute="bottom" constant="8" id="X14-Oa-d0h"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qHf-i9-BCS" secondAttribute="trailing" id="X3p-aK-Pzf"/>
@@ -155,13 +149,13 @@
                 <constraint firstItem="Xbb-VE-lc2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="evw-Kc-7LM"/>
                 <constraint firstItem="Xbb-VE-lc2" firstAttribute="top" secondItem="Iin-TS-Pve" secondAttribute="bottom" constant="60" id="eyT-Hx-Rrq"/>
                 <constraint firstItem="Iin-TS-Pve" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="fVM-wc-YB0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gbe-os-LFy" secondAttribute="trailing" id="hOf-cc-ZNN"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Iin-TS-Pve" secondAttribute="trailing" id="heu-Ia-qwX"/>
-                <constraint firstItem="BWD-8k-USa" firstAttribute="top" secondItem="miC-hA-vM4" secondAttribute="bottom" constant="80" id="iVf-9m-Ue5"/>
                 <constraint firstItem="e5u-GL-fak" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j1C-3w-fr2"/>
                 <constraint firstItem="j0H-h9-obJ" firstAttribute="top" secondItem="e5u-GL-fak" secondAttribute="bottom" constant="80" id="lHL-0n-iN4"/>
-                <constraint firstItem="miC-hA-vM4" firstAttribute="top" secondItem="Xbb-VE-lc2" secondAttribute="bottom" constant="8" id="lIQ-SM-Pkw"/>
                 <constraint firstItem="fhH-bU-rZ3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="ldB-2d-N83"/>
                 <constraint firstItem="qHf-i9-BCS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pMT-4I-lZj"/>
+                <constraint firstItem="Gbe-os-LFy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pgG-ae-C3O"/>
                 <constraint firstItem="e5u-GL-fak" firstAttribute="top" secondItem="fhH-bU-rZ3" secondAttribute="bottom" constant="8" id="qfm-N8-Xh6"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ySi-mt-UKc" secondAttribute="trailing" constant="20" id="qpK-Cc-DkK"/>
                 <constraint firstItem="iDC-G2-4Bu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="u1Y-r0-tD8"/>
@@ -176,6 +170,9 @@
         <namedColor name="AppLabel">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411764705883" green="0.44313725490196076" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
