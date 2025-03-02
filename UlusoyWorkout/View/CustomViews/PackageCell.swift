@@ -57,6 +57,8 @@ class PackageCell : FSPagerViewCell{
             }
         }
         
+        print("test")
+        
         nameLabel.text = package.name
         
         priceLabel.text = package.price
