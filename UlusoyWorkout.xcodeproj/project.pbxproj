@@ -23,12 +23,12 @@
 		C66E32442D6A634D00920570 /* ProgramsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32432D6A634D00920570 /* ProgramsVM.swift */; };
 		C66E32462D6A72B900920570 /* CoachingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E32452D6A72B900920570 /* CoachingService.swift */; };
 		C66E324B2D6A9B9200920570 /* ReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66E324A2D6A9B9200920570 /* ReviewService.swift */; };
-		C696C9C42D728553006A1EE6 /* Privacy.plist in Resources */ = {isa = PBXBuildFile; fileRef = C696C9C32D728553006A1EE6 /* Privacy.plist */; };
 		C696C9C62D72857F006A1EE6 /* GetToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9C52D72857F006A1EE6 /* GetToken.swift */; };
 		C696C9C82D7376FC006A1EE6 /* WebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9C72D7376FC006A1EE6 /* WebVC.swift */; };
 		C696C9CA2D73C049006A1EE6 /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9C92D73C049006A1EE6 /* ColorHelper.swift */; };
 		C696C9CC2D749D85006A1EE6 /* PackageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C696C9CB2D749D85006A1EE6 /* PackageCell.swift */; };
 		C696C9CE2D749D8E006A1EE6 /* PackageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C696C9CD2D749D8E006A1EE6 /* PackageCell.xib */; };
+		C6B9451C2D74D99500DC899A /* Privacy.plist in Resources */ = {isa = PBXBuildFile; fileRef = C6B9451B2D74D99500DC899A /* Privacy.plist */; };
 		C6F5F0922D6F3918005F3B1F /* PicturesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0912D6F3918005F3B1F /* PicturesService.swift */; };
 		C6F5F0952D6FB029005F3B1F /* CoachingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */; };
 		C6F5F0962D6FB029005F3B1F /* CoachingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */; };
@@ -60,12 +60,12 @@
 		C66E32432D6A634D00920570 /* ProgramsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramsVM.swift; sourceTree = "<group>"; };
 		C66E32452D6A72B900920570 /* CoachingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingService.swift; sourceTree = "<group>"; };
 		C66E324A2D6A9B9200920570 /* ReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewService.swift; sourceTree = "<group>"; };
-		C696C9C32D728553006A1EE6 /* Privacy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Privacy.plist; sourceTree = "<group>"; };
 		C696C9C52D72857F006A1EE6 /* GetToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetToken.swift; sourceTree = "<group>"; };
 		C696C9C72D7376FC006A1EE6 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
 		C696C9C92D73C049006A1EE6 /* ColorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
 		C696C9CB2D749D85006A1EE6 /* PackageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackageCell.swift; sourceTree = "<group>"; };
 		C696C9CD2D749D8E006A1EE6 /* PackageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PackageCell.xib; sourceTree = "<group>"; };
+		C6B9451B2D74D99500DC899A /* Privacy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Privacy.plist; sourceTree = "<group>"; };
 		C6F5F0912D6F3918005F3B1F /* PicturesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicturesService.swift; sourceTree = "<group>"; };
 		C6F5F0932D6FB029005F3B1F /* CoachingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingCell.swift; sourceTree = "<group>"; };
 		C6F5F0942D6FB029005F3B1F /* CoachingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoachingCell.xib; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		C66E321B2D6A140800920570 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C696C9C32D728553006A1EE6 /* Privacy.plist */,
+				C6B9451B2D74D99500DC899A /* Privacy.plist */,
 				C696C9C52D72857F006A1EE6 /* GetToken.swift */,
 				C66E320E2D6A0BCA00920570 /* Info.plist */,
 				C66E320D2D6A0BCA00920570 /* Assets.xcassets */,
@@ -289,7 +289,7 @@
 				C66E32292D6A269900920570 /* Localizable.strings in Resources */,
 				C66E32162D6A0BCA00920570 /* LaunchScreen.storyboard in Resources */,
 				C6F5F0982D6FBAD5005F3B1F /* ProgramsContentView.xib in Resources */,
-				C696C9C42D728553006A1EE6 /* Privacy.plist in Resources */,
+				C6B9451C2D74D99500DC899A /* Privacy.plist in Resources */,
 				C696C9CE2D749D8E006A1EE6 /* PackageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

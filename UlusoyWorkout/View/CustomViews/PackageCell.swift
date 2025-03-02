@@ -56,9 +56,7 @@ class PackageCell : FSPagerViewCell{
                 self.contentImage.image = image
             }
         }
-        
-        print("test")
-        
+                
         nameLabel.text = package.name
         
         priceLabel.text = package.price
@@ -66,5 +64,17 @@ class PackageCell : FSPagerViewCell{
         descriptionLabel.text = package.description
     }
     
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesEnded(touches, with: event)
+        self.alpha = 1.0
+    }
+
+    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        UIView.animate(withDuration: 0.3) {
+            super.touchesCancelled(touches, with: event)
+            self.alpha = 1.0
+        }
+    }
     
 }

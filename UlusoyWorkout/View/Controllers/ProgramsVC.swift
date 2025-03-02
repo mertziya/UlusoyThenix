@@ -16,9 +16,11 @@ class ProgramsVC: UIViewController{
     
     @IBOutlet weak var coachingLabel: UILabel!
     @IBOutlet weak var coachingCollectionView: FSPagerView!
+    private var coachingLoadingIndicator = UIActivityIndicatorView()
     
     @IBOutlet weak var packagesLabel: UILabel!
     @IBOutlet weak var packagesCollectionView: FSPagerView!
+    private var packageLoadingIndicator = UIActivityIndicatorView()
     
     @IBOutlet weak var resultsLabel: UILabel!
     @IBOutlet weak var resultPicturesCollectionView: UICollectionView!
@@ -37,6 +39,7 @@ class ProgramsVC: UIViewController{
         didSet{
             DispatchQueue.main.async {
                 self.coachingCollectionView.reloadData()
+                self.coachingLoadingIndicator.stopAnimating()
             }
         }
     }
@@ -44,6 +47,7 @@ class ProgramsVC: UIViewController{
         didSet{
             DispatchQueue.main.async {
                 self.packagesCollectionView.reloadData()
+                print("rendered")
             }
         }
     }
@@ -73,6 +77,11 @@ extension ProgramsVC{
     
     private func setupScrollView(){
         loadContentView()
+        
+        coachingLoadingIndicator.hidesWhenStopped = true
+        coachingLoadingIndicator.startAnimating()
+        coachingLoadingIndicator.style = .large
+        coachingLoadingIndicator.color = .tabbar
 
         view.backgroundColor = .appLightGray
         scrollView.backgroundColor = .appLightGray
@@ -80,8 +89,10 @@ extension ProgramsVC{
 
         view.addSubview(scrollView)
         scrollView.addSubview(contentView)
+        contentView.addSubview(coachingLoadingIndicator)
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         contentView.translatesAutoresizingMaskIntoConstraints = false
+        coachingLoadingIndicator.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -95,7 +106,9 @@ extension ProgramsVC{
             
             contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor), // For the vertical scrolling.
             
-           
+            coachingLoadingIndicator.centerXAnchor.constraint(equalTo: coachingCollectionView.centerXAnchor),
+            coachingLoadingIndicator.centerYAnchor.constraint(equalTo: coachingCollectionView.centerYAnchor),
+            
         ])
         
         
@@ -160,8 +173,6 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
         }
     }
     
-  
-    
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         switch pagerView{
             
@@ -198,7 +209,14 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
                 cell.alpha = 1.0
             }
         case packagesCollectionView:
-            print("handle packages tapped")
+            let webVC = WebVC(webURL: self.packages[index].productURL ?? "")
+            webVC.modalPresentationStyle = .fullScreen
+            self.navigationController?.pushViewController(webVC, animated: true)
+            
+            UIView.animate(withDuration: 0.1) {
+                guard let cell = pagerView.cellForItem(at: index) as? CoachingCell else{return}
+                cell.alpha = 1.0
+            }
             
         default:
             return
@@ -211,10 +229,12 @@ extension ProgramsVC : FSPagerViewDelegate , FSPagerViewDataSource {
     
     func pagerView(_ pagerView: FSPagerView, didHighlightItemAt index: Int) {
         UIView.animate(withDuration: 0.1) {
-            guard let cell = pagerView.cellForItem(at: index) as? CoachingCell else{return}
+            guard let cell = pagerView.cellForItem(at: index) else{return}
             cell.alpha = 0.4
         }
     }
+    
+    
  
     
 }
@@ -234,13 +254,8 @@ extension ProgramsVC : ProgramsVMDelegate{
     }
     
     // MARK: - Coaching Binding:
-    func isLoadingCoachings(value: Bool) {
-        print(value)
-    }
-    
-    func didReturnErrorForCoaching(with error: any Error) {
-        print(error.localizedDescription)
-    }
+    func isLoadingCoachings(value: Bool) {  }
+    func didReturnErrorForCoaching(with error: any Error) {  }
     
     func didLoadCoachings(with coachings: [Coaching]) {
         self.coachings = coachings
@@ -248,13 +263,8 @@ extension ProgramsVC : ProgramsVMDelegate{
     
     
     // MARK: - Packages Binding:
-    func isLoadingPackages(value: Bool) {
-        print(value)
-    }
-    
-    func didReturnErrorForPackages(with error: any Error) {
-        print(error.localizedDescription)
-    }
+    func isLoadingPackages(value: Bool) {  }
+    func didReturnErrorForPackages(with error: any Error) {  }
     
     func didLoadPackages(with packages: [ReadyPackage]) {
         self.packages = packages
@@ -262,13 +272,8 @@ extension ProgramsVC : ProgramsVMDelegate{
     
     
     // MARK: - Reviews Binding:
-    func isLoadingReviews(value: Bool) {
-        print(value)
-    }
-    
-    func didReturnErrorForReview(with error: any Error) {
-        print(error.localizedDescription)
-    }
+    func isLoadingReviews(value: Bool) {  }
+    func didReturnErrorForReview(with error: any Error) {  }
     
     func didLoadReviews(with reviews: [Review]) {
 //        print(reviews)
@@ -276,13 +281,8 @@ extension ProgramsVC : ProgramsVMDelegate{
     
     
     // MARK: - Pictures Binding:
-    func isLoadingPictures(value: Bool) {
-        print(value)
-    }
-    
-    func didReturnErrorForPictures(with error: any Error) {
-        print(error.localizedDescription)
-    }
+    func isLoadingPictures(value: Bool) {  }
+    func didReturnErrorForPictures(with error: any Error) {  }
     
     func didLoadPictures(with pictures: [Picture]) {
 //        print(pictures)
